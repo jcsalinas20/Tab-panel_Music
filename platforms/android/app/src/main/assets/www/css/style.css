@@ -1,0 +1,26 @@
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+#test-swipe-1,
+#test-swipe-2,
+#test-swipe-3 {
+  height: 100% !important;
+}
+
+.tabs-content.carousel.carousel-slider {
+  height: 93% !important;
+}
+
+.tabs {
+  height: 7%;
+}
