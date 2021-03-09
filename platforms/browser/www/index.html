@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Security-Policy"
-		content="default-src 'self' https://covid-19-data.p.rapidapi.com https://code.jquery.com https://fonts.gstatic.com data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+		content="default-src 'self' https://covid-19-data.p.rapidapi.com http://musicbrainz.org https://code.jquery.com https://fonts.gstatic.com data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="msapplication-tap-highlight" content="no">
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<nav class="light-blue lighten-1" role="navigation">
+	<nav role="navigation">
 		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="#">Navbar Link</a></li>
@@ -30,22 +30,58 @@
 		</div>
 	</nav>
 
-	<div id="test-swipe-1" class="col s12">
-		<h1>Global Result</h1>
-		<div class="global">
-			<p class="total-confirmed"><b>Total</b>: 11111111111</p>
-			<p class="total-criticals"><b>Critical</b>: 11111111111</p>
-			<p class="total-deaths"><b>Deaths</b>: 11111111111</p>
-			<p class="last-change"><b>Last Change</b>: 11111111111</p>
-			<p class="last-update"><b>Last Update</b>: 11111111111</p>
+	<div id="search-tab" class="col s12" style="overflow: auto;">
+		<ul class="collection">
+			<li class="collection-header">
+				<div class="row">
+					<div class="input-field col s8">
+						<i class="material-icons prefix">search</i>
+						<input id="name" type="text" value="skrillex">
+						<label for="name">Name</label>
+					</div>
+					<div class="col s4">
+						<a class="waves-effect waves-light btn" href="#search-result" id="submit">Search</a>
+					</div>
+				</div>
+			</li>
+			<div class="collection-body">
+				<p>Aún no se ha buscado ningún resultado.</p>
+			</div>
+		</ul>
+	</div>
+	<div id="details-tab" class="col s12">
+		<div class="card-panel teal">
+			<div class="row">
+				<div class="col s6">
+					<p><b>Name:</b></p>
+					<p class="name"></p>
+				</div>
+				<div class="col s6">
+					<p><b>Gender:</b></p>
+					<p class="gender"></p>
+				</div>
+				<div class="col s6">
+					<p><b>Country:</b></p>
+					<p class="country"></p>
+				</div>
+				<div class="col s6">
+					<p><b>Type:</b></p>
+					<p class="type"></p>
+				</div>
+				<div class="col s12">
+					<p><b>Tags:</b></p>
+					<div class="tags">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div id="test-swipe-2" class="col s12"></div>
 	<div id="test-swipe-3" class="col s12"></div>
 
 	<ul id="tabs" class="tabs">
-		<li class="tab col s3"><a class="active" href="#test-swipe-1">Global Results</a></li>
-		<li class="tab col s3"><a href="#test-swipe-2">Search County</a></li>
+		<li class="tab col s3"><a class="active" href="#search-tab"> <i class="material-icons">search</i> Search</a>
+		</li>
+		<li class="tab col s3"><a href="#details-tab"><i class="material-icons">description</i> Details</a></li>
 		<li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
 	</ul>
 
