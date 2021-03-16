@@ -15,13 +15,14 @@
 					tabsInstance.select("details-tab");
 					const data = $(e.target).data("body");
 					console.log(data);
-					$(".card-panel .name").text(data.name);
-					$(".card-panel .gender").text(data.gender);
-					$(".card-panel .type").text(data.type);
-					$(".card-panel .country").text(data.country);
-					$(".card-panel .tags").html('');
+					$("#details-tab .id").html(`<span>ID:</span> ${data.id}`);
+					$("#details-tab .name").text(data.name);
+					$("#details-tab .gender").text((data.gender) ? data.gender : 'null');
+					$("#details-tab .type").text(data.type);
+					$("#details-tab .country").text(data.country);
+					$("#details-tab .tags").html('');
 					for (const tag of data.tags)
-						$(".card-panel .tags").append(`<div class="chip">${tag.name}</div>`);
+						$("#details-tab .tags").append(`<div class="chip">${tag.name}</div>`);
 				});
 			});
 		})
