@@ -18,13 +18,32 @@
 
 <body>
 	<nav role="navigation">
-		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">
+				<img src="img/logo.png" alt="name">
+			</a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="#">Navbar Link</a></li>
 			</ul>
 
 			<ul id="nav-mobile" class="sidenav">
-				<li><a href="#">Navbar Link</a></li>
+				<li>
+					<div class="user-view">
+						<div class="background">
+							<img src="img/background.jpeg">
+						</div>
+						<a href="#user"><img class="circle user-img" src="img/logo.jpg"></a>
+						<a href="#name"><span class="white-text name">Juan Carlos Salinas</span></a>
+						<a href="#email"><span class="white-text email">jcsalinasn20@gmail.com</span></a>
+					</div>
+				</li>
+				<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+				<li><a href="#!">Second Link</a></li>
+				<li>
+					<div class="divider"></div>
+				</li>
+				<li><a class="subheader">Subheader</a></li>
+				<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
 			</ul>
 			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		</div>
@@ -81,13 +100,15 @@
 			</div>
 		</div>
 	</div>
-	<div id="test-swipe-3" class="col s12"></div>
+	<div id="test-swipe-3" class="col s12">
+		<p>Developing :)</p>
+	</div>
 
 	<ul id="tabs" class="tabs">
 		<li class="tab col s3"><a class="active" href="#search-tab"> <i class="material-icons">search</i> Search</a>
 		</li>
 		<li class="tab col s3"><a href="#details-tab"><i class="material-icons">description</i> Details</a></li>
-		<li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+		<li class="tab col s3"><a href="#test-swipe-3"><i class="material-icons">layers</i> Test</a></li>
 	</ul>
 
 	<!--  Scripts-->
