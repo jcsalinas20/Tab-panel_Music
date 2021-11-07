@@ -8,12 +8,12 @@ Ejercicio clase: App Móvil, consultar a una API los grupos y artistas musicales
 
 ### Side Menu
 
-![sidemenu](http://imgfz.com/i/RH14uWj.png)
+![sidemenu](https://raw.githubusercontent.com/jcsalinas20/Tab-panel_Music/main/images/sidemenu.png)
 
 ### Screen 1
 
-![screen1](http://imgfz.com/i/aZy3CzR.png)
+![screen1](https://raw.githubusercontent.com/jcsalinas20/Tab-panel_Music/main/images/search.png)
 
 ### Screen 2
 
-![screen2](http://imgfz.com/i/pI2dVE8.png)
+![screen2](https://raw.githubusercontent.com/jcsalinas20/Tab-panel_Music/main/images/details.png)
